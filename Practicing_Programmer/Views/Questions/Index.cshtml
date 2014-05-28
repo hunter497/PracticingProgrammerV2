@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Practicing_Programmer.Models.Question>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Questions</h2>
+
+<div>
+    @Html.ActionLink("Create", "Create")
+</div>
+
+<div>
+    @foreach (var item in Model)
+    {
+        <a class="question-summary" href="@Url.Action("Details", new { id=item.QuestionID })">
+            <h3>@Html.DisplayFor(modelItem => item.Inquiry)</h3>
+            <p>@Html.DisplayFor(modelItem => item.Summary)</p>
+            <p>Difficulty: @Html.DisplayFor(modelItem => item.Difficulty)</p>
+        </a>
+    }
+</div>

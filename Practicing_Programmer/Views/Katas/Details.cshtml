@@ -1,0 +1,49 @@
+﻿@model Practicing_Programmer.Models.Kata
+@section Scripts 
+{
+    <script src="@Url.Content("~/Scripts/Kata/AnswerSlide.js")"></script>
+}
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="title">
+    <h2>@Html.DisplayFor(model => model.Title)</h2>    
+</div>
+
+<div>
+    <div>
+        <h3>Summary</h3>
+        <div class="break"></div>
+        <p>@Html.DisplayFor(model => model.Summary)</p>
+        <p>Category: @Html.DisplayFor(model => model.Category)</p>
+        <p>Difficulty: @Html.DisplayFor(model => model.Difficulty)</p>
+    </div>
+    <div class="problem">
+        <h3>Problem Description</h3>
+        <div class="break"></div>
+        <p>@Html.DisplayFor(model => model.Content)</p>
+        <p>Github: @Html.DisplayFor(model => model.GithubLink)</p>
+    </div>
+    <div class="input">
+        <h3>Sample Input</h3>
+        <div class="break"></div>
+        <p>@Html.DisplayFor(model => model.TestInput)</p>
+    </div>
+    <div class="output">
+        <h3>Sample Output</h3>
+        <div class="break"></div>
+        <p>@Html.DisplayFor(model => model.TestOutput)</p>
+    </div>
+    <button id="hideshow" class="answer" value="hide/show">Answer</button>
+    <div id="slider" style="display: none">
+        <h3>Answer</h3>
+        <div class="break"></div>
+        <p>@Html.DisplayFor(model => model.Answer)</p>
+    </div>
+    
+    <p>
+        @Html.ActionLink("Back to List", "Index")
+    </p>    
+</div>
