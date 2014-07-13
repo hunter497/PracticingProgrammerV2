@@ -8,6 +8,11 @@
     ViewBag.Title = "Details";
 }
 
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.KataID }, new { @class = "btn btn-default" })
+    @Html.ActionLink("Delete", "Delete", new { id = Model.KataID }, new { @class = "btn btn-default" })
+</div>
+
 <div class="title">
     <h2>@Html.DisplayFor(model => model.Title)</h2>    
 </div>

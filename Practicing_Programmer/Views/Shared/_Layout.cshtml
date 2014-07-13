@@ -8,11 +8,10 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body>
+<body class="background">
     @Html.Partial("_Nav")
     <div class="container">
         @RenderBody()
-        <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - The Practicing Programmer</p>
         </footer>

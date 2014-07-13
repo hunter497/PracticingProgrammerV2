@@ -1,0 +1,31 @@
+﻿/* Styles for Kata links */
+
+a.kata_summary {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(13, 44, 167, 0.80);
+    margin: 0em;
+    padding: 0em .75em .75em .75em;
+    border: .1em solid black;
+    border-radius: 1em;
+}
+
+a.kata_summary:hover {
+    background-color: rgba(8, 35, 155, 0.80);
+}
+
+a.kata_link { 
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(13, 44, 167, 0.80);
+    margin: .75em 0em 0em 0em;
+    padding: .5em 0em .5em .75em;
+    border: .1em solid black;
+    border-radius: 1em;
+}
+
+a.kata_link:hover { 
+    background-color: rgba(8, 35, 155, 0.80);  
+}
