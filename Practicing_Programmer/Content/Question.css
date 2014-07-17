@@ -29,3 +29,14 @@ a.question_link {
 a.question_link:hover { 
     background-color: #036313;  
 }
+
+.question_button {
+    color: white;
+    background-color: #056c1d;
+    border-color: black;
+}
+.question_button:hover {
+    color: white;
+    background-color: #036313;
+    border-color: black;
+}

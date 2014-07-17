@@ -1,18 +1,17 @@
-﻿/* Styles for Kata links */
-
-a.kata-summary {
-    display: block;
-    text-decoration: none;
-    color: black;
-    background-color: gainsboro;
-    margin: .75em;
-    padding-left: .75em;
-    border: .1em solid black;
-    border-radius: 1em;
+﻿.editor-label {
+    color: white;
 }
 
-a.kata-summary:hover {
-    background-color: lightgrey;
+.editor-field {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+legend {
+    color: white;
 }
 
 .hidden {
@@ -28,19 +27,3 @@ a.kata-summary:hover {
 
 }
 
-/* Styles for Question links */
-
-a.question-summary {
-    display: block;
-    text-decoration: none;
-    color: black;
-    background-color: gainsboro;
-    margin: .75em;
-    padding-left: .75em;
-    border: .1em solid black;
-    border-radius: 1em;
-}
-
-a.question-summary:hover {
-    background-color: lightgrey;
-}

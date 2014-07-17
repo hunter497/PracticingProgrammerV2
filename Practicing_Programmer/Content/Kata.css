@@ -29,3 +29,14 @@ a.kata_link {
 a.kata_link:hover { 
     background-color: rgba(8, 35, 155, 0.80);  
 }
+
+.kata_button {
+    color: white;
+    background-color: rgba(13, 44, 167, 0.80);
+    border-color: black;
+}
+.kata_button:hover {
+    color: white;
+    background-color: rgba(8, 35, 155, 0.80);
+    border-color: black;
+}
